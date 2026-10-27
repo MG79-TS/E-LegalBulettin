@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-Legal Bulletin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ticker" aria-label="Breaking news">
+  <span class="ticker-tag">Breaking News</span>
+  <div class="ticker-track"><span id="tickerText"></span></div>
+</div>
+
+<header class="masthead">
+  <a href="#" class="logo" aria-label="E-Legal Bulletin Post home">E-Legal<span>Bulletin</span></a>
+  <div class="tools">
+    <input id="search" type="search" placeholder="Search stories" aria-label="Search stories">
+    <button id="themeBtn" class="icon-btn" aria-label="Toggle dark mode">Theme</button>
+  </div>
+  <time id="today" class="today"></time>
+</header>
+
+<nav class="tabs" id="tabs" aria-label="Sections"></nav>
+
+<main>
+  <section id="lead" class="lead" aria-label="Top story"></section>
+  <section class="grid-wrap">
+    <h2 id="gridTitle">Latest</h2>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="empty" hidden>No stories match. Try another section or clear your search.</p>
+    <button id="more" class="more">Load more stories</button>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>School News Project of Grade 12 Fluorine Group 3</p>
+</footer>
+
+<dialog id="modal" class="modal">
+  <button id="closeModal" class="x" aria-label="Close story">✕</button>
+  <article id="modalBody"></article>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
